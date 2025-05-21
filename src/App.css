@@ -50,3 +50,24 @@
   font-weight: 500;
   font-style: normal;
 }
+
+@keyframes slide{
+  0%{
+    transform: translateX(-50%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+.marquee{
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee-content {
+  display: flex;
+  width: fit-content;
+  white-space: nowrap;
+  animation: slide 20s linear infinite;
+}
